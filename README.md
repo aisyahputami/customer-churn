@@ -88,5 +88,12 @@ To simplify the analysis process, we can **replace the "attrition_flag" column w
 ![churn](https://github.com/aisyahputami/customer-churn/blob/main/eda/replace-to-churn.png)
 
 ### Multivariate Analysis
-####
-![churn](https://github.com/aisyahputami/customer-churn/blob/main/eda/replace-to-churn.png)
+#### Income Category by Age
+![income](https://github.com/aisyahputami/customer-churn/tree/main/eda)
+
+In summary, the distribution indicates that the majority of customers have medium to low incomes, with a few having high incomes. Additionally, income tends to increase with age but remains dominant in the middle-income category.
+
+1. **General Pattern**: The majority of customers have incomes less than $40K in each age range.
+2. **Income Increase Trend**: There is a trend of increasing income with age. For example, in the age range [20,32), the number of customers with incomes less than $40K is 232, while in the age range [44,56), the number of customers with incomes less than $40K increases to 2302.
+3. **Middle-Class Income Pattern**: Income ranges between $40K and $120K are the most common in each age range, although the numbers can vary. This indicates that most customers fall into the middle-income category.
+4. **High Income**: Although fewer in number, there are customers with incomes over $120K, especially in older age ranges (above 44 years).

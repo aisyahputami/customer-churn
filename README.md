@@ -83,6 +83,8 @@ When we train a prediction model using a dataset with such a significant class i
 
 Therefore, special handling is needed, such as oversampling or undersampling techniques, to balance these classes during model training. This will help prevent the model from leaning too much towards the majority class and allow the model to learn patterns from both classes more effectively.
 
+To simplify the analysis process, we can **replace the "attrition_flag" column with a boolean column called "churn"** where **"True" represents "Attrited Customer" and "False" represents "Existing Customer"**.
+
 ### Multivariate Analysis
 ####
 ![new](https://github.com/aisyahputami/customer-churn/blob/main/eda/new_income-category.png)

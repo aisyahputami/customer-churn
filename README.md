@@ -143,3 +143,20 @@ In summary, the distribution suggests that **credit limits tend to increase with
 
     
 For clarity, print out a list of correlation coeffs vs the dependent variable "churn"
+
+
+#### Customer Churn by Card Category
+![card](https://github.com/aisyahputami/customer-churn/blob/main/eda/customer-churn-by-card-category-distribution.png)
+
+The distribution of customer churn by card category provides an overview of the number of customers who churned in each card category. Here is a summary of the distribution:
+1. **Blue card category**: has a churn rate of 15.29%
+2. **Silver Card Category**: has a churn rate of 14.73%
+3. **Gold Card Category**: has a churn rate of 18.10%
+4. **Platinum Card Category**: has a churn rate of 25%
+
+From the data, we can conclude that **the churn rate tends to increase with the higher level of exclusivity or card status**, with the highest churn rate occurring in the Platinum card category (25%). Although this contradicts the common assumption that cards with higher status will have lower churn rates, in this context, customers with Platinum cards appear to have a higher churn rate.
+
+This may be due to several factors, such as higher expectations from customers with higher status, higher fee requirements, or changes in customer preferences regarding the benefits offered by the card.
+
+#### Customer Churn by Education Level
+![education]()

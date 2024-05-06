@@ -56,7 +56,6 @@ The main purpose of a data quality report is to evaluate, identify, and communic
 ### Univariate Analysis
 #### Marital Status
 ![marital](https://github.com/aisyahputami/customer-churn/blob/main/eda/marital-status.png)
-
 There are 749 "unknowns" out of 10,000 records. This is significant enough that we shouldn't just drop these records, we should try to fill these. Let's use the strategy to impute using the most common category.
 
 

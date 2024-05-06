@@ -110,3 +110,23 @@ The distribution of "Income_Category" by "Credit_Limit" reveals how credit limit
 4. **High Credit Limits for Higher Incomes**: Conversely, customers in higher income categories tend to have higher credit limits, with a significant portion falling into the higher credit limit ranges ([14000,21000) and above).
 
 In summary, the distribution suggests that **credit limits tend to increase with income**, with **lower-income individuals having lower credit limits and higher-income individuals having higher credit limits**. There is also variability within middle-income categories, reflecting diverse credit needs among customers with similar income levels.
+
+#### Correlation Metrix
+![metrix](https://github.com/aisyahputami/customer-churn/blob/main/eda/correlation-matrix.png)
+
+**Summary of correlations:**
+- Strong correlation coeffs observed between:
+  - months_on_book vs customer_age
+  - total_trans_amt vs total_relationship_count
+  - total_trans_ct vs total_relationship_count
+  - avg_open_to_buy vs credit_limit 
+    - **Very co-linear**, makes sense as customers with high credit-limit are probably the ones who are quire open to having even more credit.*
+  - avg_utilisation_ratio vs credit_limit
+  - avg_utilisation_ratio vs total_revolving_bal
+  - avg_utilisation_ratio vs avg_open_to_buy
+  - total_ct_chng_q4_q1 vs total_amt_chng_q4_q1
+    - These 2 features are inter-related, so makes sense to be highly positive correlation.
+  - total_transaction_ct vs total_trans_amt
+    - Again these 2 features are inter-related, so makes sense to be highly positive correlation.
+    
+For clarity, print out a list of correlation coeffs vs the dependent variable "churn"

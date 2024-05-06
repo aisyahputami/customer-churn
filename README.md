@@ -128,5 +128,17 @@ In summary, the distribution suggests that **credit limits tend to increase with
     - These 2 features are inter-related, so makes sense to be highly positive correlation.
   - total_transaction_ct vs total_trans_amt
     - Again these 2 features are inter-related, so makes sense to be highly positive correlation.
+
+**Top few correlations vs churn (sorted by coefficient):**
+- total_trans_ct (-ve correlation)
+- total_ct_chng_q4_q1 (-ve correlation)
+- total_revolving_bal (-ve correlation)
+- contacts_count_12_mon (+ve correlation)
+- avg_utilization_ratio (-ve correlation)
+- months_inactive_12_mon (+ve correlation)
+- **Summary**
+  - Negative correlations with features that represent "usage of credit".
+  - Positive correlations with features that represent "lack of usage of credit".
+
     
 For clarity, print out a list of correlation coeffs vs the dependent variable "churn"

@@ -231,4 +231,13 @@ After that, **using Accuracy as a metric to find the best threshold after buildi
 
 In this section, we can choose which columns will be used as features. In this case, **we will use all columns except for the columns CLIENTNUM, Attrition_Flag, Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1, and Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2**. 
 
+#### Algorithms
+![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-10.png)
+
+By using a combination of Algorithm such as Random Forest, Logistic Regression, LightGBM, and XGBoost, we can benefit from model diversity and maximize the potential for accurate predictions and good generalization.
+
+#### Save and Train
+Click on Save and then proceed to run the Train process. This step typically takes around 3-5 minutes to complete.
+
+![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-11.png)
 

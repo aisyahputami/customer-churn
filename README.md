@@ -85,6 +85,8 @@ Therefore, special handling is needed, such as oversampling or undersampling tec
 
 To simplify the analysis process, we can **replace the "attrition_flag" column with a boolean column called "churn"** where **"True" represents "Attrited Customer" and "False" represents "Existing Customer"**.
 
+![churn](https://github.com/aisyahputami/customer-churn/blob/main/eda/replace-to-churn.png)
+
 ### Multivariate Analysis
 ####
-![new](https://github.com/aisyahputami/customer-churn/blob/main/eda/new_income-category.png)
+![churn](https://github.com/aisyahputami/customer-churn/blob/main/eda/replace-to-churn.png)

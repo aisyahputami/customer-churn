@@ -115,7 +115,7 @@ The distribution of "Income_Category" by "Credit_Limit" reveals how credit limit
 
 In summary, the distribution suggests that **credit limits tend to increase with income**, with **lower-income individuals having lower credit limits and higher-income individuals having higher credit limits**. There is also variability within middle-income categories, reflecting diverse credit needs among customers with similar income levels.
 
-#### Correlation Metrix
+#### Correlation Matrix
 ![metrix](https://github.com/aisyahputami/customer-churn/blob/main/eda/correlation-matrix.png)
 
 **Summary of correlations:**

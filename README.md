@@ -117,6 +117,7 @@ In summary, the distribution suggests that **credit limits tend to increase with
 **Summary of correlations:**
 - Strong correlation coeffs observed between:
   - months_on_book vs customer_age
+  - total_trans_ct vs total_trans_amt
   - total_trans_amt vs total_relationship_count
   - total_trans_ct vs total_relationship_count
   - avg_open_to_buy vs credit_limit 

@@ -176,3 +176,21 @@ From the data, we can conclude that there is variation in churn rates among diff
 
 Although there is no clear pattern where higher education levels always result in lower churn rates, there are indications that customers with certain education levels may have a higher tendency to churn.
 
+## Modelling
+### Setup Analysis
+First, let's create a "New Analysis" with the dataset used, namely **BankChurners_prepared**. This dataset has undergone transformation processes according to the needs outlined during the EDA process. Let's name it **ML Development**, then click Create Analysis.
+
+![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-1.png)
+
+Next, create a "New Model Task" and select **AutoML Prediction**.
+![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-2.png)
+
+Select the "churn" column as the target column and choose **Quick Prototypes**. Then, click Create.
+
+![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-3.png)
+
+Before training the model, review the model design first.
+![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-4.png)
+
+
+### Feature Selection

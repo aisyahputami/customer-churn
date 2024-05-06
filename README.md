@@ -64,14 +64,25 @@ There are **749 "unknowns" out of 10,000** records. This is significant enough t
 
 There are **even more "unknown" salary** (1112). For now we will **impute this simply using the "most_common" category** (Less than $40k). However income is likely to be quite linked to other features. With more time we could impute this by grouped information on some of these demographic features. For future, in case we would come back to change this imputation strategy, let's identify some features we would group by. Plot distributions vs income.
 
+#### Age
+![age](https://github.com/aisyahputami/customer-churn/blob/main/eda/customer-age-distribution.png)
 
+From these statistics, we can see that **the age distribution tends to be centered around the mean value (46.33 years) and the median (46 years)**, with a relatively low standard deviation (8.02 years). This indicates that the majority of the data falls within a relatively close range from the mean, although there is significant variation in age from the minimum value (26 years) to the maximum (73 years).
 
-![replace](https://github.com/aisyahputami/customer-churn/blob/main/eda/replace-marital-status.png)
+#### Credit Limit
+![credit](https://github.com/aisyahputami/customer-churn/blob/main/eda/credit-limit-distribution.png)
 
-![new](https://github.com/aisyahputami/customer-churn/blob/main/eda/new_marital-status.png)
+From these statistics, we can observe that **the credit limit distribution is characterized by a wide range of values**, as evidenced by the large standard deviation (9088.78). Both the mean (8631.95) and the median (4549) indicate that there is a substantial difference between the average and typical credit limits. The minimum credit limit is 1438.3, while the maximum is 34516, illustrating significant variability in credit limits among individuals. Additionally, the number of distinct values (6205) suggests that there are many unique credit limits in the dataset, further highlighting the diversity in credit limits among the population.
 
-![replace](https://github.com/aisyahputami/customer-churn/blob/main/eda/replace-income-category.png)
+#### Attrition Flag
+![flag](https://github.com/aisyahputami/customer-churn/blob/main/eda/attrition-flag-distribution.png)
 
-![new](https://github.com/aisyahputami/customer-churn/blob/main/eda/new_income-category.png)
+From this statistics, we can see that the **majority of customers (84%)** in the dataset **are "Existing Customer"** while **the rest (16%) are "Attrited Customer"**.
+
+When we train a prediction model using a dataset with such a significant class imbalance, the model tends to predict the majority class more often than the minority class. This can lead to poor model performance in identifying rare or minority cases.
+
+Therefore, special handling is needed, such as oversampling or undersampling techniques, to balance these classes during model training. This will help prevent the model from leaning too much towards the majority class and allow the model to learn patterns from both classes more effectively.
 
 ### Multivariate Analysis
+####
+![new](https://github.com/aisyahputami/customer-churn/blob/main/eda/new_income-category.png)

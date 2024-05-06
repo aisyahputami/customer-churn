@@ -91,7 +91,7 @@ To simplify the analysis process, we can **replace the "attrition_flag" column w
 #### Income Category by Age
 ![income](https://github.com/aisyahputami/customer-churn/blob/main/eda/income-category-by-age-distribution.png)
 
-In summary, the distribution indicates that the majority of customers have medium to low incomes, with a few having high incomes. Additionally, income tends to increase with age but remains dominant in the middle-income category.
+In summary, the distribution indicates that **the majority of customers have medium to low incomes**, with a few having high incomes. Additionally, **income tends to increase with age but remains dominant in the middle-income category**.
 
 1. **General Pattern**: The majority of customers have incomes less than $40K in each age range.
 2. **Income Increase Trend**: There is a trend of increasing income with age. For example, in the age range [20,32), the number of customers with incomes less than $40K is 232, while in the age range [44,56), the number of customers with incomes less than $40K increases to 2302.

@@ -203,12 +203,25 @@ It seems that the "churn" column has an imbalanced distribution, with "Yes" acco
 ![imbalance](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-6.png)
 
 #### Train / Test Set
-In this section, select "Split the dataset". Don't forget to activate K-fold cross-test and choose the number of folds as 4. The number 4 means the dataset will be divided into 4 equally sized parts and will undergo 4 iterations where each part is used as the testing data once. This helps in obtaining a more stable estimate of our model's performance.
+In this section, select "Split the dataset". Don't forget to **activate K-fold cross-test** and choose **the number of folds as 4**. The number 4 means the dataset will be divided into 4 equally sized parts and will undergo 4 iterations where each part is used as the testing data once. This helps in obtaining a more stable estimate of our model's performance.
 
-Next, input 1337 as the splitting random seed. This means that 1337 is the seed value used in the process of dividing the data into subsets for training and testing. This seed is used to control the randomness of the data split. So, if we use the same seed value (in this case "1337") in the data splitting process, we will get the same split each time we run the process.
+Next, input **1337 as the splitting random seed**. This means that 1337 is the seed value used in the process of dividing the data into subsets for training and testing. This seed is used to control the randomness of the data split. So, if we use the same seed value (in this case "1337") in the data splitting process, we will get the same split each time we run the process.
 
 ![train](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-7.png)
 
-Also, don't forget to activate Stratified. In the context of data splitting or model testing, stratified aims to maintain the same class proportions in each fold when performing cross-validation. This is important especially when you have class imbalance in your data.
+Also, don't forget to **activate Stratified**. In the context of data splitting or model testing, stratified aims to maintain the same class proportions in each fold when performing cross-validation. This is important especially when you have class imbalance in your data.
 
 In cross-validation without stratification, there's a chance that one or some folds may have significantly different class proportions than others. This can lead to inconsistent and even biased model evaluations, especially if you have important minority classes in your dataset.
+
+#### Metrics
+![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-8.png)
+
+The **use of Recall as a metric for finding the best model during hyperparameter optimization and KFold cross-validation** serves several purposes:
+
+1. **Addressing class imbalance**: When the dataset has an imbalance between positive and negative classes, as in this case, metrics like accuracy alone may not provide an accurate picture of the model's performance. Recall provides information about the model's ability to identify all instances of the positive class (true positive rate), thus helping to assess the overall model performance, especially if the minority class is considered important.
+2. **Focus on detecting positive cases**: In this case, we focus on the model's ability to detect positive cases (true positives). This is because **accurately detecting customers who will churn allows the marketing team to create business strategies to prevent it**. Recall provides a measure of how well the model can find all positive cases in the dataset.
+3. **Avoiding false negatives**: False negatives (positive cases incorrectly classified as negative) can have serious consequences. In this case, customers who churn but are predicted not to will result in losses for the company. This is because **the cost of acquiring customers is higher than the cost of retaining** them. Using recall as an evaluation metric helps reduce these errors because models with high recall are more likely to avoid false negatives.
+
+So, in the context of hyperparameter optimization and KFold cross-validation, the use of recall helps evaluate the model's performance more holistically, especially in cases of class imbalance and when focusing on detecting important positive cases.
+
+After that, **using Accuracy as a metric to find the best threshold after building a model primarily** aims to evaluate how well the model can correctly classify both classes, positive and negative, at a single time.

@@ -194,8 +194,21 @@ Before training the model, review the model design first.
 
 ### Feature Selection
 #### Target
-In the target section, make sure that the selected target column is "churn" and the Prediction Type is Two-class Classification.
+In the target section, make sure that the selected target column is "churn" and the Prediction Type is **Two-class Classification**.
 
-![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-5.png)
+![target](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-5.png)
 
-It seems that the "churn" column has an imbalanced distribution, with "Yes" accounting for 16% and "No" for 84%. This imbalance can affect the model's performance. However, based on the information provided in the [Dataiku documentation](https://doc.dataiku.com/dss/latest/machine-learning/supervised/settings.html?_gl=1*3rkwkw*_ga*MTkxNDg5MjQ2Ni4xNzEyNTE0NTYy*_ga_B3YXRYMY48*MTcxNDk5MzMyNi40LjEuMTcxNDk5MzUyNy40OS4wLjA.#setting-weighting-strategy), the class weights feature can address the imbalance issue in the data.
+It seems that the "churn" column has an imbalanced distribution, with "Yes" accounting for 16% and "No" for 84%. This imbalance can affect the model's performance. However, based on the information provided in the [Dataiku documentation](https://doc.dataiku.com/dss/latest/machine-learning/supervised/settings.html?_gl=1*3rkwkw*_ga*MTkxNDg5MjQ2Ni4xNzEyNTE0NTYy*_ga_B3YXRYMY48*MTcxNDk5MzMyNi40LjEuMTcxNDk5MzUyNy40OS4wLjA.#setting-weighting-strategy), the **class weights** feature can address the imbalance issue in the data.
+
+![imbalance](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-6.png)
+
+#### Train / Test Set
+In this section, select "Split the dataset". Don't forget to activate K-fold cross-test and choose the number of folds as 4. The number 4 means the dataset will be divided into 4 equally sized parts and will undergo 4 iterations where each part is used as the testing data once. This helps in obtaining a more stable estimate of our model's performance.
+
+Next, input 1337 as the splitting random seed. This means that 1337 is the seed value used in the process of dividing the data into subsets for training and testing. This seed is used to control the randomness of the data split. So, if we use the same seed value (in this case "1337") in the data splitting process, we will get the same split each time we run the process.
+
+![train](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-7.png)
+
+Also, don't forget to activate Stratified. In the context of data splitting or model testing, stratified aims to maintain the same class proportions in each fold when performing cross-validation. This is important especially when you have class imbalance in your data.
+
+In cross-validation without stratification, there's a chance that one or some folds may have significantly different class proportions than others. This can lead to inconsistent and even biased model evaluations, especially if you have important minority classes in your dataset.

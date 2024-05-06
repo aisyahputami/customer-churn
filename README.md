@@ -55,6 +55,15 @@ The main purpose of a data quality report is to evaluate, identify, and communic
 ## Exploratory Data Analysis (EDA)
 ### Univariate Analysis
 #### Marital Status
+![marital](https://github.com/aisyahputami/customer-churn/blob/main/eda/marital-status.png)
 
+There are 749 "unknowns" out of 10,000 records. This is significant enough that we shouldn't just drop these records, we should try to fill these. Let's use the strategy to impute using the most common category.
+
+
+#### Income Category
+![income](https://github.com/aisyahputami/customer-churn/blob/main/eda/income-category.png)
+
+There are even more "unknown" salary (1112). For now we will impute this simply using the "most_common" category (Less than $40k).
+However income is likely to be quite linked to other features. With more time we could impute this by grouped information on some of these demographic features. For future, in case we would come back to change this imputation strategy, let's identify some features we would group by. Plot distributions vs income.
 
 ### Multivariate Analysis

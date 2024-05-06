@@ -87,7 +87,7 @@ To simplify the analysis process, we can **replace the "attrition_flag" column w
 
 ![churn](https://github.com/aisyahputami/customer-churn/blob/main/eda/replace-to-churn.png)
 
-### Multivariate Analysis
+### Bivariate Analysis
 #### Income Category by Age
 ![income](https://github.com/aisyahputami/customer-churn/blob/main/eda/income-category-by-age-distribution.png)
 

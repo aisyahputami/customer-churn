@@ -51,7 +51,6 @@ The main purpose of a data quality report is to evaluate, identify, and communic
    It is important that the maximum value of Credit_Limit is below 35000 because it helps in understanding the credit risk exposure of the bank and the financial stability of its customers.
 
 
-
 ## Exploratory Data Analysis (EDA)
 ### Univariate Analysis
 #### Marital Status
@@ -154,9 +153,9 @@ For clarity, print out a list of correlation coeffs vs the dependent variable "c
 ![card](https://github.com/aisyahputami/customer-churn/blob/main/eda/customer-churn-by-card-category-distribution.png)
 
 The distribution of customer churn by card category provides an overview of the number of customers who churned in each card category. Here is a summary of the distribution:
-1. **Blue card category**: has a churn rate of 15.29%
-2. **Silver Card Category**: has a churn rate of 14.73%
-3. **Gold Card Category**: has a churn rate of 18.10%
+1. **Blue card category**: has a churn rate of 15.94%
+2. **Silver Card Category**: has a churn rate of 14.04%
+3. **Gold Card Category**: has a churn rate of 18.02%
 4. **Platinum Card Category**: has a churn rate of 25%
 
 From the data, we can conclude that **the churn rate tends to increase with the higher level of exclusivity or card status**, with the highest churn rate occurring in the Platinum card category (25%). Although this contradicts the common assumption that cards with higher status will have lower churn rates, in this context, customers with Platinum cards appear to have a higher churn rate.
@@ -164,4 +163,16 @@ From the data, we can conclude that **the churn rate tends to increase with the 
 This may be due to several factors, such as higher expectations from customers with higher status, higher fee requirements, or changes in customer preferences regarding the benefits offered by the card.
 
 #### Customer Churn by Education Level
-![education]()
+![education](https://github.com/aisyahputami/customer-churn/blob/main/eda/customer-churn-by-education-level-distribution.png)
+
+From the data, we can conclude that there is variation in churn rates among different education levels. Although no specific education level consistently has a higher or lower churn rate than others, there are some interesting findings:
+
+1. "**Doctorate**" education level has the highest churn rate at 20.72%.
+2. "**Post-Graduate**" education level has a churn rate of 17.70%.
+3. "**Uneducated**" education level has a churn rate of 15.85%.
+4. "**Graduate**" education level has a churn rate of 15.82%.
+5. "**College**" education level has a relatively low churn rate at 15.04%.
+6. "**High School**" education level has a churn rate of 14.92%.
+
+Although there is no clear pattern where higher education levels always result in lower churn rates, there are indications that customers with certain education levels may have a higher tendency to churn.
+

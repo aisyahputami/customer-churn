@@ -18,3 +18,17 @@ Ensure that the dataset used is correct, then click **Create**.
 
 
 ## Data Quality Report
+The main purpose of a data quality report is to evaluate, identify, and communicate the level of reliability, accuracy, completeness, and consistency of the existing data. In this case, several indicators will be identified as samples of dataset quality. These indicators include:
+
+1. No empty values exist in all columns
+   Ensuring that there are no empty values in all columns of the data is important for data quality because it ensures that the data used for analysis or decision-making does not have gaps or missing information that could affect the validity and accuracy of the results.
+2. All values of CLIENTNUM are unique
+   Every unique CLIENTNUM value serves as a distinct identifier for each individual customer or client. This uniqueness ensures that each customer's account or relationship with the bank can be accurately distinguished and tracked. Additionally, having unique CLIENTNUM values helps maintain the integrity of the dataset. It prevents duplication or confusion of customer records, which could lead to errors in analysis or decision-making.
+3. Min of Customer_Age is above 25
+   By considering the minimum age value of customers above 25 years in churn analysis, banks can identify more stable customer segments, prioritize retention efforts in these segments, and develop more effective marketing strategies to reduce churn.
+4. The values ​​of the Attrition_Flag column are only two, namely Attrited Customer and Existing Customer
+   It is important that the values of the Attrition_Flag column are only two, namely "Attrited Customer" and "Existing Customer," because it simplifies the analysis and classification of customers into distinct groups based on their churn status. Having only two categories makes it easier to understand and interpret the data, and allows for straightforward comparison between customers who have churned (Attrited Customer) and those who are still active (Existing Customer).
+5. Min of Months_on_book is above 12
+   Overall, ensuring that the minimum value of Months_on_book is above 12 enables banks to focus their efforts on analyzing and serving their most valuable and loyal customers, leading to improved customer retention, satisfaction, and profitability.
+6. Max of Credit_Limit is below 35000
+   It is important that the maximum value of Credit_Limit is below 35000 because it helps in understanding the credit risk exposure of the bank and the financial stability of its customers.

@@ -192,5 +192,10 @@ Select the "churn" column as the target column and choose **Quick Prototypes**. 
 Before training the model, review the model design first.
 ![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-4.png)
 
-
 ### Feature Selection
+#### Target
+In the target section, make sure that the selected target column is "churn" and the Prediction Type is Two-class Classification.
+
+![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-5.png)
+
+It seems that the "churn" column has an imbalanced distribution, with "Yes" accounting for 16% and "No" for 84%. This imbalance can affect the model's performance. However, based on the information provided in the [Dataiku documentation](https://doc.dataiku.com/dss/latest/machine-learning/supervised/settings.html?_gl=1*3rkwkw*_ga*MTkxNDg5MjQ2Ni4xNzEyNTE0NTYy*_ga_B3YXRYMY48*MTcxNDk5MzMyNi40LjEuMTcxNDk5MzUyNy40OS4wLjA.#setting-weighting-strategy), the class weights feature can address the imbalance issue in the data.

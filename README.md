@@ -64,6 +64,11 @@ There are **749 "unknowns" out of 10,000** records. This is significant enough t
 
 There are **even more "unknown" salary** (1112). For now we will **impute this simply using the "most_common" category** (Less than $40k). However income is likely to be quite linked to other features. With more time we could impute this by grouped information on some of these demographic features. For future, in case we would come back to change this imputation strategy, let's identify some features we would group by. Plot distributions vs income.
 
+#### Education Level
+![education](https://github.com/aisyahputami/customer-churn/blob/main/eda/education-level.png)
+
+There are **15% "unknown" eduaction level** (1519). For now we will **impute this simply using the "most_common" category** (Graduate).
+
 #### Age
 ![age](https://github.com/aisyahputami/customer-churn/blob/main/eda/customer-age-distribution.png)
 

@@ -63,6 +63,7 @@ There are 749 "unknowns" out of 10,000 records. This is significant enough that 
 
 ![new](https://github.com/aisyahputami/customer-churn/blob/main/eda/new_marital-status.png)
 
+#### 
 #### Income Category
 ![income](https://github.com/aisyahputami/customer-churn/blob/main/eda/income-category.png)
 

@@ -25,7 +25,6 @@ The main purpose of a data quality report is to evaluate, identify, and communic
 
    Ensuring that there are no empty values in all columns of the data is important for data quality because it ensures that the data used for analysis or decision-making does not have gaps or missing information that could affect the validity and accuracy of the results.
 
-
 **2. All values of CLIENTNUM are unique**
 ![2](https://github.com/aisyahputami/customer-churn/blob/main/data-quality/data-quality-2.png)
 
@@ -50,3 +49,12 @@ The main purpose of a data quality report is to evaluate, identify, and communic
 ![6](https://github.com/aisyahputami/customer-churn/blob/main/data-quality/data-quality-6.png)
 
    It is important that the maximum value of Credit_Limit is below 35000 because it helps in understanding the credit risk exposure of the bank and the financial stability of its customers.
+
+
+
+## Exploratory Data Analysis (EDA)
+### Univariate Analysis
+#### Marital Status
+
+
+### Multivariate Analysis

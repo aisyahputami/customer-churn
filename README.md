@@ -89,7 +89,7 @@ To simplify the analysis process, we can **replace the "attrition_flag" column w
 
 ### Multivariate Analysis
 #### Income Category by Age
-![income](https://github.com/aisyahputami/customer-churn/tree/main/eda)
+![income](https://github.com/aisyahputami/customer-churn/blob/main/eda/income-category-by-age-distribution.png)
 
 In summary, the distribution indicates that the majority of customers have medium to low incomes, with a few having high incomes. Additionally, income tends to increase with age but remains dominant in the middle-income category.
 

@@ -97,3 +97,16 @@ In summary, the distribution indicates that **the majority of customers have med
 2. **Income Increase Trend**: There is a trend of increasing income with age. For example, in the age range [20,32), the number of customers with incomes less than $40K is 232, while in the age range [44,56), the number of customers with incomes less than $40K increases to 2302.
 3. **Middle-Class Income Pattern**: Income ranges between $40K and $120K are the most common in each age range, although the numbers can vary. This indicates that most customers fall into the middle-income category.
 4. **High Income**: Although fewer in number, there are customers with incomes over $120K, especially in older age ranges (above 44 years).
+
+
+#### Income Category by Credit Limit
+![credit](https://github.com/aisyahputami/customer-churn/blob/main/eda/income-category-by-credit-limit-distribution.png)
+
+The distribution of "Income_Category" by "Credit_Limit" reveals how credit limits vary across different income brackets. Here are some insights we can gather from the distribution:
+
+**1. Credit Limit Increase with Income**: Generally, there is an increasing trend in credit limits as income categories rise. For example, in the income category "Less than $40K," the majority of customers have credit limits in the range [0,7000), while in the income category "$120K +," the majority have credit limits in the higher ranges, such as [28000,35000).
+**2. Middle-Income Credit Limits**: In the middle-income categories ($40K - $120K), the distribution of credit limits is relatively balanced across different ranges, indicating that customers in these income brackets have varying credit needs.
+**3. Low Credit Limits for Lower Incomes**: Customers in the "Less than $40K" income category predominantly have lower credit limits, with the majority falling in the range [0,7000).
+**4. High Credit Limits for Higher Incomes**: Conversely, customers in higher income categories tend to have higher credit limits, with a significant portion falling into the higher credit limit ranges ([14000,21000) and above).
+
+In summary, the distribution suggests that credit limits tend to increase with income, with lower-income individuals having lower credit limits and higher-income individuals having higher credit limits. There is also variability within middle-income categories, reflecting diverse credit needs among customers with similar income levels.

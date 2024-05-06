@@ -241,6 +241,12 @@ By using a combination of Algorithm such as Random Forest, Logistic Regression, 
 #### Save and Train
 Click on Save and then proceed to run the Train process. This step typically takes around 3-5 minutes to complete.
 
-![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-11.png)
+![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling_11.png)
 
 ## Result
+The **best-performing model obtained is Random Forest** with a **Recall value of 90.5%**.
+![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/result.png)
+
+In addition, let's examine the performance of each model based on the confusion matrix values. As mentioned earlier, the focus of the model performance we expect is to **minimize the false negatives and maximize the positive cases**. Based on the four models used, it is evident that **Random Forest is the best-performing model that fulfills the research assumptions**.
+
+![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/model.png)

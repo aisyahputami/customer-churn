@@ -192,7 +192,7 @@ Select the "churn" column as the target column and choose **Quick Prototypes**. 
 Before training the model, review the model design first.
 ![setup](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-4.png)
 
-### Feature Selection
+### Basic
 #### Target
 In the target section, make sure that the selected target column is "churn" and the Prediction Type is **Two-class Classification**.
 
@@ -226,11 +226,13 @@ So, in the context of hyperparameter optimization and KFold cross-validation, th
 
 After that, **using Accuracy as a metric to find the best threshold after building a model primarily** aims to evaluate how well the model can correctly classify both classes, positive and negative, at a single time.
 
-#### Feautures Handling
+### Features
+#### Features Handling
 ![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-9.png)
 
 In this section, we can choose which columns will be used as features. In this case, **we will use all columns except for the columns CLIENTNUM, Attrition_Flag, Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1, and Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2**. 
 
+### Modelling
 #### Algorithms
 ![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-10.png)
 
@@ -241,3 +243,4 @@ Click on Save and then proceed to run the Train process. This step typically tak
 
 ![metrics](https://github.com/aisyahputami/customer-churn/blob/main/modelling/modelling-11.png)
 
+## Result
